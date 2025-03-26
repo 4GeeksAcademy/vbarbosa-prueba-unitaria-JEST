@@ -1,49 +1,48 @@
-<!-- hide -->
-# Hello World with Vanilla JS
+<!--hide-->
+# Unit testing with Jest
+<!--endhide-->
 
-> 🇪🇸 [Spanish version of this readme is available](./README.es.md).
-<!-- endhide -->
-Start coding a JS/HTML/CSS website in 30 seconds by opening this template using 4Geeks' [One-Click Coding](https://s.4geeks.com/start?repo=https://github.com/4GeeksAcademy/vanillajs-hello) or locally on your computer.
+> Important: 💻 This exercise is interactive. Please follow the instructions.
 
-## Before you begin
+Most developers today are required not only to write code, but also need to write code to test their own code 😱, yes... really.
 
-Install the packages by typing: `npm install`.
+Today we are going to be using the [Jest framework](https://jestjs.io/) to create our first tests.
 
-### How do I run my website to see live changes?  
+<onlyfor saas="false" withBanner="false">
+  
+## 🌱 How to start this project
 
-Type on the command line `$ npm run start` and type localhost on the browser.
+This project comes with the necessary files to start working immediately.
 
-### Where do I write my code?  
+We recommend opening this very same repository using a provisioning tool like [Codespaces](https://4geeks.com/lesson/what-is-github-codespaces) (recommended) or [Gitpod](https://4geeks.com/lesson/how-to-use-gitpod). Alternatively, you can clone it on your local computer using the `git clone` command.
 
-It depends on the language, but you have `./src/app.js`, `./src/style.css` and `./src/index.html` respectively, you can add new `.html` as you please, just make sure to import it on the `app.js`.
+This is the repository you need to open:
 
-> Note: remember that the JS workflow starts inside `window.onload`.
+```text
+https://github.com/breatheco-de/exercise-unit-test-with-jest
+```
+
+**👉 Please follow these steps on** [how to start a coding project](https://4geeks.com/lesson/how-to-start-a-project).
 
 
-## Troubleshooting
+> 💡 Important: Remember to save and upload your code to GitHub by creating a new repository, updating the remote (`git remote set-url origin <your new url>`), and uploading the code to your new repository using the `add`, `commit` and `push` commands from the git terminal.
 
-### I don't see my changes...
+Then follow these instructions:
 
-Everytime you change any file inside the `./src` folder the website's public URL will automatically refresh the changes (it's a process called hot deploy)
-Remember also to refresh cleaning the cache (`command+shift+r` on Mac, `control+shift+r` on PC & Linux)
+1. Get into the exercise folder: `$ cd exercise-unit-test-with-jest`
+2. Download learnpack globally (if you don't have it already): `$ npm i @learnpack/learnpack -g`
+3. Start the exercise: `$ learnpack start`
 
-### How do I include more images in my project?
+</onlyfor>
 
-Add them inside the `./src/assets/img` folder and import them from any of your JS files. E.g: `import "../assets/img/rigo-baby.jpg";`
+## What is this exercise about?
 
-### How do I include more JS files?
+We are going to be using the Jest library to build a program capable of converting numeric values from one currency to another:
 
-Just add the files into the src folder and import the file/variables into your app.js. E.g: `import myVar from "./file2.js"`
+| Function name     | Description                                                           |
+| ----------------- | --------------------------------------------------------------------- |
+| fromDollarToYen   | Receives a dollar amount and returns the equivalent amount in Japan Yen |
+| fromEuroToDollar  | Receives a Euro amount and returns the equivalent amount in US Dollar |
+| fromYenToPound    | Receives a Yen amount and returns the equivalent amount in England Pound |
 
-### How do I publish the website?
-
-We have prepared the boilerplate to be compatible with [vercel](https://vercel.com/), very easy and in just one step! 
-You can read more about [deploying on vercel here](https://4geeks.com/docs/start/deploy-vercel).
-
-<!-- hide -->
-### Thank you
-
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning) or [CyberSecurity Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/cybersecurity)
-
-You can find other templates and resources like this at the [school's GitHub page](https://github.com/4geeksacademy/).
-<!-- endhide -->
+This and many other projects are built by students as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).

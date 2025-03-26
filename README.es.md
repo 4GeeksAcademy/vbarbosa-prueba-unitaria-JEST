@@ -1,47 +1,50 @@
-# Hola Mundo con Vanilla JS
+<!-- hide -->
+# Prueba Unitaria con Jest
+<!-- endhide -->
 
-Empieza a programar un sitio web JS/HTML/CSS en 30 segundos abriendo esta plantilla con nuestro puente de [One-Click Coding](https://s.4geeks.com/start?repo=https://github.com/4GeeksAcademy/vanillajs-hello) o localmente en tu computador.
+> Importante: 💻 Este ejercicio es interactivo. Sigue las instrucciones.
 
-## Antes de empezar
+La mayoría de los desarrolladores hoy en día no solo deben escribir código, sino que también deben escribir código para probar su propio código 😱, sí... de verdad.
 
-Una vez tu editor de codigo este abierto, instala los paquetes escribiendo: `npm install`.
+Hoy usaremos el [framework de Jest](https://jestjs.io/) para crear nuestras primeras pruebas unitarias.
 
-### ¿Cómo ejecuto mi sitio web para ver los cambios en vivo?
+<onlyfor saas="false" withBanner="false">
+  
+## 🌱 Cómo comenzar este proyecto
 
-Escribe en la línea de comandos `$ npm run start` y escribe localhost en el navegador.
+Este proyecto viene con los archivos necesarios para comenzar a trabajar de inmediato.
 
-### ¿Dónde escribo mi código?
+Recomendamos abrir este mismo repositorio usando un entorno de desarrollo como [Codespaces](https://4geeks.com/es/lesson/tutorial-de-github-codespaces) (recomendado) o [Gitpod](https://4geeks.com/es/lesson/como-utilizar-gitpod). Alternativamente, puedes clonarlo en tu computadora local usando el comando `git clone`.
 
-Depende del lenguaje, pero tienes `./src/app.js`, `./src/style.css` y `./src/index.html` respectivamente. Puedes agregar nuevos `.html` como desees, solo asegúrate de importarlo en el `app.js`.
+Este es el repositorio que necesitas abrir:
 
-> Nota: recuerda que el flujo de trabajo de JS comienza dentro de `window.onload`.
-
-## Resolución de problemas
-
-### No veo mis cambios...
-
-Cada vez que cambies cualquier archivo dentro de la carpeta `./src`, la URL pública del sitio web se actualizará automáticamente (es un proceso llamado hot deploy). Recuerda también actualizar limpiando la caché (`command+shift+r` en Mac, `control+shift+r` en PC y Linux).
-
-### ¿Cómo incluyo más imágenes en mi proyecto?
-
-Agrégalas dentro de la carpeta `./src/assets/img` y luego impórtalas desde cualquiera de tus archivos JS. Ejemplo: `import "../assets/img/rigo-baby.jpg";`.
-
-### ¿Cómo incluyo más archivos JS?
-
-Simplemente agrega los archivos en la carpeta src e importa los archivos/variables en tu app.js. Ejemplo: `import myVar from "./file2.js"`.
-
-### ¿Cómo publico el sitio web?
-
-Esta plantilla es 100% compatible con el alojamiento gratuito de GitHub Pages. Publica tu sitio web ejecutando:
-
-```bash
-$ npm run deploy
+```text
+https://github.com/breatheco-de/exercise-unit-test-with-jest
 ```
 
-¡Muy fácil y en solo un paso! Sube a tu rama __main__ y utiliza el alojamiento gratuito que viene con [GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages), el proyecto está listo para ser publicado. Recuerda elegir ejecutar la Página de GitHub desde tu rama principal.
+**👉 Por favor sigue estos pasos sobre** [cómo comenzar un proyecto de programación](https://4geeks.com/es/lesson/como-comenzar-un-proyecto-de-codificacion).
 
-### Gracias
+> 💡 Importante: Recuerda guardar y subir tu código a GitHub creando un nuevo repositorio, actualizando el remoto (`git remote set-url origin <your new url>`) y subiendo el código a tu nuevo repositorio usando los comandos `add`, `commit` y `push` desde la terminal de git.
 
-Esta plantilla fue creada como parte del [curso de programacion](https://4geeksacademy.com/es/curso-de-programacion-desde-cero?lang=es) de 4Geeks Academy por [Alejandro Sanchez](https://twitter.com/alesanchezr) y muchos otros contribuyentes. Descubre más sobre nuestro [Curso de Desarrollador Full Stack](https://4geeksacademy.com/es/coding-bootcamps/desarrollador-full-stack?lang=es), [Bootcamp de Ciencia de Datos](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning?lang=es) o [Curso de Ciberseguridad](https://4geeksacademy.com/es/coding-bootcamps/curso-ciberseguridad?lang=es).
+## Instalacion local (opcional)
 
-Puedes encontrar otras plantillas y recursos como este en la [página de GitHub de la escuela](https://github.com/4geeksacademy/).
+**Si no deseas** abrir el tutorial utilizando un proveedor en la nube (recomendado), puedes instalarlo localmente en tu computadora compliendo los siguientes pasos:
+
+1. Clone este repo.
+2. Entra a la carpeta del repositorio: `$ cd exercise-unit-test-with-jest`
+3. Instala learnpack globalmente (Si es que aún no lo tienes): `$ npm i @learnpack/learnpack -g`
+4. Comienza el ejercicio: `$ learnpack start`
+
+</onlyfor>
+
+## ¿Sobre qué trata este ejercicio?
+
+Usaremos la librería Jest para crear un programa capaz de convertir valores numéricos de una divisa a otra:
+
+| Nombre de Función | Descripción                                                           |
+| ----------------- | --------------------------------------------------------------------- |
+| fromDollarToYen   | Recibe un monto en dólares y devuelve el monto equivalente en yenes japoneses |
+| fromEuroToDollar  | Recibe un monto en euros y devuelve el monto equivalente en dólares estadounidenses|
+| fromYanToPound    | Recibe un monto en yen y devuelve el monto equivalente en libras esterlinas |
+
+Este y otros proyectos son usados para [aprender a programar](https://4geeksacademy.com/es/aprender-a-programar/aprender-a-programar-desde-cero) por parte de los alumnos de 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) realizado por [Alejandro Sánchez](https://twitter.com/alesanchezr) y muchos otros contribuyentes. Conoce más sobre nuestros [Cursos de Programación](https://4geeksacademy.com/es/curso-de-programacion-desde-cero?lang=es) para convertirte en [Full Stack Developer](https://4geeksacademy.com/es/coding-bootcamps/desarrollador-full-stack/?lang=es), o nuestro [Data Science Bootcamp](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning).

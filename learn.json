@@ -1,16 +1,41 @@
 {
-  "autoPlay": false,
-  "title": {
-    "en": "Vanilla.js Starter Template for beginners",
-    "es": "Plantilla Inicial de Vanilla.js para principiantes"
+	"title": {
+      "us": "Your first unit tests with Javascript's Jest Framework",
+      "es": "Tus primeras pruebas unitarias de Javascript con Jest"
   },
-  "description": {
-    "en": "This is a starter template for Vanilla.js projects. It includes a basic folder structure with separation between CSS, JS and HTML files. It also uses Vite to kickstart your project and it can be deployed to Vercel in just one click",
-    "es": "Este es un template inicial para proyectos en Vanilla.js. Incluye una estructura básica de carpetas con separación entre archivos CSS, JS y HTML. También utiliza Vite para iniciar tu proyecto y puede ser desplegado en Vercel con un solo clic."
+	"gitpod": true,
+	"slug": "unit-test-with-jest",
+	"solution": "https://github.com/breatheco-de/exercise-unit-test-with-jest/tree/solution",
+	"repository": "https://github.com/breatheco-de/exercise-unit-test-with-jest",
+	"grading": "incremental",
+	"skills": [
+		"unit-testing",
+		"test-driven-dev"
+	],
+	"language": "node",
+	"difficulty": "easy",
+	"preview": "https://github.com/breatheco-de/exercise-unit-test-with-jest/blob/main/.learn/assets/preview.jpeg?raw=true",
+	"duration": 16,
+	"template_url": "self",
+	"videoSolutions": false,
+	"projectType": "tutorial",
+	"bugsLink": "https://github.com/learnpack/learnpack/issues/new",
+	"technologies": [
+		"javascript",
+		"jest",
+		"unit testing",
+		"node"
+	],
+	"description": {
+      "us": "Create a JavaScript program with Jest to convert values between currencies: from dollars to yen, from euros to dollars, and from yen to pounds. Learn how to write unit tests to automatically grade the solutions, improving your JavaScript development and automation skills.",
+      "es": "Crea un programa en JavaScript con Jest para convertir valores entre divisas: de dólares a yenes, de euros a dólares y de yenes a libras. Aprende a escribir pruebas unitarias (unit tests) para calificar automáticamente las soluciones, mejorando tus habilidades de desarrollo y automatización en JavaScript."
   },
-  "repository": "https://github.com/4GeeksAcademy/vanillajs-hello",
-  "preview": "https://repository-images.githubusercontent.com/130237499/fc593900-78de-11ea-8d19-fb66acf4d7fe",
-  "projectType": "template",
-  "difficulty": "beginner",
-  "technologies": ["HTML", "CSS", "Javascript", "DOM", "VITE", "MODULE BUNDLER"]
+  "projectType": "tutorial",
+  "autoPlay": true,
+	"editor": {
+		"version": "5.0"
+	},
+	"telemetry": {
+    		"batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id=209"
+	}
 }
